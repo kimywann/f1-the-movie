@@ -2,9 +2,9 @@ import Header from "./components/Header";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div>
+    <div className="min-h-screen">
       <Header />
-      {children}
+      <main className="pt-16">{children}</main>
     </div>
   );
 };
