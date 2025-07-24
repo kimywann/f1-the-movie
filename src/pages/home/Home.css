@@ -1,0 +1,28 @@
+.title-fire {
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+}
+
+.title-fire::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: url("/fire-animation.gif") no-repeat center;
+  background-size: contain;
+  pointer-events: none;
+  animation: flicker 1s infinite alternate;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
