@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Formula1";
+  src: url("./assets/font/Formula1-Regular-1.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 기본 폰트 설정 */
+body {
+  font-family: "Formula1", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
